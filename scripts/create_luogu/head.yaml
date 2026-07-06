@@ -1,0 +1,9 @@
+name: create_luogu
+language: python
+file: create_luogu.py
+description: 创建 Luogu 题目目录及 head.yaml、problem.md，自动抓取题目信息
+usage: python3 scripts/create_luogu/create_luogu.py P1002 [--title ...] [--tags ...]
+dependencies:
+- pyyaml
+- requests
+- beautifulsoup4

@@ -1,0 +1,7 @@
+name: find
+language: python
+file: find.py
+description: 交互式搜索题目，支持 id/title/tag/desc/diff/oj/common 前缀搜索
+usage: python3 scripts/find/find.py
+dependencies:
+- pyyaml

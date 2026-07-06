@@ -1,0 +1,6 @@
+name: fix_md_latex
+language: python
+file: fix_md_latex.py
+description: 将 Markdown 文件中的 LaTeX 定界符（\(\) \[\]）转换为标准格式（$$ $）
+usage: python3 scripts/fix_md_latex/fix_md_latex.py <file>
+dependencies: []

@@ -1,0 +1,9 @@
+name: import_luogu_old
+language: python
+file: import_luogu_old.py
+description: 将 luogu-old/ 的旧题目导入 problem/luogu/old-code/，自动生成 head.yaml 和 problem.md
+usage: python3 scripts/import_luogu_old/import_luogu_old.py [--dry-run]
+dependencies:
+- pyyaml
+- requests
+- beautifulsoup4

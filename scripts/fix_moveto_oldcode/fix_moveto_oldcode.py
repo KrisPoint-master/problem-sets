@@ -1,7 +1,7 @@
 import os
 import shutil
 
-LUOGU_DIR = os.path.join(os.path.dirname(__file__), "..", "problem", "luogu")
+LUOGU_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "problem", "luogu")
 OLD_CODE_DIR = os.path.join(LUOGU_DIR, "old-code")
 
 ORIGINAL_15 = {

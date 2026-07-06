@@ -9,8 +9,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-sys.path.insert(0, os.path.dirname(__file__))
-from create_luogu import (
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from create_luogu.create_luogu import (
     fetch_page_data,
     fetch_similar_problems,
     build_problem_md,
@@ -19,7 +19,7 @@ from create_luogu import (
     PROBLEM_DIR,
 )
 
-OLD_DIR = os.path.join(os.path.dirname(__file__), "..", "luogu-old")
+OLD_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "luogu-old")
 LUOGU_DIR = PROBLEM_DIR  # problem/luogu/
 OLD_CODE_DIR = os.path.join(LUOGU_DIR, "old-code")
 

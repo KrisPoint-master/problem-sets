@@ -7,7 +7,7 @@ import yaml
 import requests
 from bs4 import BeautifulSoup
 
-PROBLEM_DIR = os.path.join(os.path.dirname(__file__), "..", "problem", "luogu")
+PROBLEM_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "problem", "luogu")
 LUOGU_URL = "https://www.luogu.com.cn/problem/{problem_id}"
 
 

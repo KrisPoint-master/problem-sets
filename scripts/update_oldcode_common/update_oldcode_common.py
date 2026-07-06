@@ -3,10 +3,10 @@ import sys
 import time
 import yaml
 
-sys.path.insert(0, os.path.dirname(__file__))
-from create_luogu import fetch_page_data, fetch_similar_problems, LUOGU_URL
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from create_luogu.create_luogu import fetch_page_data, fetch_similar_problems, LUOGU_URL
 
-OLD_CODE_DIR = os.path.join(os.path.dirname(__file__), "..", "problem", "luogu", "old-code")
+OLD_CODE_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "problem", "luogu", "old-code")
 
 DIFFICULTY_MAP = {
     0: "暂无评定", 1: "入门", 2: "普及-", 3: "普及/提高-",

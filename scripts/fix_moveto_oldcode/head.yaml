@@ -1,0 +1,6 @@
+name: fix_moveto_oldcode
+language: python
+file: fix_moveto_oldcode.py
+description: 修复导入时将旧题目错误放入 problem/luogu/Pxxxx/ 的问题，移至 old-code/
+usage: python3 scripts/fix_moveto_oldcode/fix_moveto_oldcode.py [--dry-run]
+dependencies: []

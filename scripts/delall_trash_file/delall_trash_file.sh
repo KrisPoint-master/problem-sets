@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROBLEM_DIR="$(cd "$(dirname "$0")/../problem/luogu" && pwd)"
+PROBLEM_DIR="$(cd "$(dirname "$0")/../../problem/luogu" && pwd)"
 DRY_RUN=0
 
 if [ "$1" = "--dry-run" ]; then

@@ -3,7 +3,7 @@ import re
 import fnmatch
 import yaml
 
-PROBLEM_DIR = os.path.join(os.path.dirname(__file__), "..", "problem")
+PROBLEM_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "problem")
 
 
 def load_problems():

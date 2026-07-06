@@ -1,0 +1,9 @@
+name: update_oldcode_common
+language: python
+file: update_oldcode_common.py
+description: 重新抓取 old-code 中题目的 common/description/title 字段
+usage: python3 scripts/update_oldcode_common/update_oldcode_common.py [--dry-run]
+dependencies:
+- pyyaml
+- requests
+- beautifulsoup4

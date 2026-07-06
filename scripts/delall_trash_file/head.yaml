@@ -1,0 +1,6 @@
+name: delall_trash_file
+language: bash
+file: delall_trash_file.sh
+description: 删除 problem/luogu/ 中的垃圾文件（.zip .out .ans .in out out1 out2 temp）
+usage: bash scripts/delall_trash_file/delall_trash_file.sh [--dry-run]
+dependencies: []

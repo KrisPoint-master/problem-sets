@@ -1,0 +1,6 @@
+name: clean_elf
+language: bash
+file: clean_elf.sh
+description: 清除当前目录及其子目录下的 ELF 可执行文件
+usage: bash scripts/clean_elf/clean_elf.sh
+dependencies: []

@@ -1,0 +1,9 @@
+name: update_common
+language: python
+file: update_common.py
+description: 批量更新所有已有题目的 common（相似题推荐）字段
+usage: python3 scripts/update_common/update_common.py [--dry-run]
+dependencies:
+- pyyaml
+- requests
+- beautifulsoup4

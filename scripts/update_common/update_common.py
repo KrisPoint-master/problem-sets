@@ -3,7 +3,8 @@ import sys
 import time
 import yaml
 
-from create_luogu import fetch_similar_problems, PROBLEM_DIR
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from create_luogu.create_luogu import fetch_similar_problems, PROBLEM_DIR
 
 LUOGU_DIR = PROBLEM_DIR
 
