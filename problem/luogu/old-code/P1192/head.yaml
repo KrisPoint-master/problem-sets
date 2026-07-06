@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1192
+title: 台阶问题
+tags:
+- 递推
+- Fibonacci 数列
+description: 有 $N$ 级台阶，你一开始在底部，每次可以向上迈 $1\sim K$ 级台阶，问到达第 $N$ 级台阶有多少种不同方式。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1192
+common:
+- P1025
+- P1057
+- P1115
+- P1135
+- P1216

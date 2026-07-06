@@ -1,0 +1,14 @@
+oj: luogu
+problem: P2415
+title: 集合求和
+tags:
+- 数学
+description: 给定一个集合 $s$（集合元素数量 $\le 30$），求出此集合所有子集元素之和。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P2415
+common:
+- P1042
+- P5461
+- P5741
+- P5743
+- P5744

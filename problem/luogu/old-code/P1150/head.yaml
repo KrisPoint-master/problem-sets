@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1150
+title: Peter 的烟
+tags:
+- 模拟
+- 数学
+description: 'Peter 有 $n$ 根烟，他每吸完一根烟就把烟蒂保存起来，$k$（$k>1$）个烟蒂可以换一个新的烟，那么 Peter 最终能吸到多少根烟呢？
+
+
+  与某些脑筋急转弯不同的是，Peter 并不能从异次元借到烟蒂，抽完后再还回去。'
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P1150
+common:
+- P1151
+- P1152
+- P1161
+- P1179
+- P1200

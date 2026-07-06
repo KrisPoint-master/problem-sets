@@ -1,0 +1,16 @@
+oj: luogu
+problem: P1144
+title: 最短路计数
+tags:
+- 图论
+- BFS
+- 最短路
+description: 给出一个 $N$ 个顶点 $M$ 条边的无向无权图，顶点编号为 $1\sim N$。问从顶点 $1$ 开始，到其他每个点的最短路有几条。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1144
+common:
+- P1073
+- P1119
+- P1462
+- P1522
+- P1608

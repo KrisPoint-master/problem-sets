@@ -1,0 +1,17 @@
+oj: luogu
+problem: P3398
+title: 仓鼠找 sugar
+tags: []
+description: '小仓鼠的和他的基（mei）友（zi）sugar 住在地下洞穴中，每个节点的编号为 $1\sim n$。地下洞穴是一个树形结构。这一天小仓鼠打算从从他的卧室（$a$）到餐厅（$b$），而他的基友同时要从他的卧室（$c$）到图书馆（$d$）。他们都会走最短路径。现在小仓鼠希望知道，有没有可能在某个地方，可以碰到他的基友？
+
+
+
+  小仓鼠那么弱，还要天天被 zzq 大爷虐，请你快来救救他吧！'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P3398
+common:
+- P1967
+- P3128
+- P3258
+- P4281
+- P5588

@@ -1,0 +1,39 @@
+oj: luogu
+problem: P9869
+title: '[NOIP2023] 三值逻辑'
+tags:
+- O2优化
+description: '小 L 今天学习了 Kleene 三值逻辑。
+
+
+  在三值逻辑中，一个变量的值可能为：真（$\mathit{True}$，简写作 $\mathit{T}$）、假（$\mathit{False}$，简写作 $\mathit{F}$）或未确定（$\mathit{Unknown}$，简写作
+  $\mathit{U}$）。
+
+
+  在三值逻辑上也可以定义逻辑运算。由于小 L 学习进度很慢，只掌握了逻辑非运算 $\lnot$，其运算法则为：
+
+  $$\lnot \mathit{T} = \mathit{F}, \lnot \mathit{F} = \mathit{T}, \lnot\mathit{U}
+  = \mathit{U}.$$
+
+
+  现在小 L 有 $n$ 个三值逻辑变量 $x_1,\cdots, x_n$。小 L 想进行一些有趣的尝试，于是他写下了 $m$ 条语句。语句有以下三种类型，其中
+  $\leftarrow$ 表示赋值：
+
+
+  1. $x_i \leftarrow v$，其中 $v$ 为 $\mathit{T}, \mathit{F}, \mathit{U}$ 的一种；
+
+  2. $x_i \leftarrow x_j$；
+
+  3. $x_i \leftarrow \lnot x_j$。
+
+
+  一开始，小 L 会给这些变量赋初值，然后按顺序运行这 $m$ 条语句。
+
+
+  小 L 希望执行了所有语句后，所有变量的最终值与初值都相等。在此前提下，小 L 希望初值中 $\mathit{Unknown}$ 的变量尽可能少。
+
+
+  在本题中，你需要帮助小 L 找到 $\mathit{Unknown}$ 变量个数最少的赋初值方案，使得执行了所有语句后所有变量的最终值和初始值相等。小 L 保证，至少对于本题的所有测试用例，这样的赋初值方案都必然是存在的。'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P9869
+common: []

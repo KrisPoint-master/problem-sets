@@ -1,0 +1,22 @@
+oj: luogu
+problem: P2918
+title: '[USACO08NOV] Buying Hay S'
+tags:
+- DP
+- 背包 DP
+description: '约翰的干草库存已经告罄，他打算为奶牛们采购 $H(1 \leq H \leq 50000)$ 磅干草。
+
+
+  他知道 $N(1 \leq N\leq 100)$ 个干草公司，现在用 $1$ 到 $N$ 给它们编号。第 $i$ 公司卖的干草包重量为 $P_i (1 \leq
+  P_i \leq 5,000)$ 磅，需要的开销为 $C_i (1 \leq C_i \leq 5,000)$ 美元。每个干草公司的货源都十分充足， 可以卖出无限多的干草包。
+
+
+  帮助约翰找到最小的开销来满足需要，即采购到至少 $H$ 磅干草。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P2918
+common:
+- P1776
+- P1833
+- P1853
+- P2347
+- P2904

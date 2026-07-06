@@ -1,0 +1,16 @@
+oj: luogu
+problem: P10452
+title: 货仓选址
+tags:
+- 贪心
+- 排序
+description: '在一条数轴上有 $N$ 家商店，它们的坐标分别为 $A_1 \sim A_N$。
+
+
+  现在需要在数轴上建立一家货仓，每天清晨，从货仓到每家商店都要运送一车商品。
+
+
+  为了提高效率，求把货仓建在何处，可以使得货仓到每家商店的距离之和最小。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P10452
+common: []

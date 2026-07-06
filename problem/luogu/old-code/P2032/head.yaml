@@ -1,0 +1,22 @@
+oj: luogu
+problem: P2032
+title: 扫描
+tags: []
+description: '有一个 $1 \times n$ 的矩阵，有 $n$ 个整数。
+
+
+  现在给你一个可以盖住连续 $k$ 个数的木板。
+
+
+  一开始木板盖住了矩阵的第 $1 \sim k$ 个数，每次将木板向右移动一个单位，直到右端与第 $n$ 个数重合。
+
+
+  每次移动前输出被覆盖住的数字中最大的数是多少。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P2032
+common:
+- P1440
+- P1638
+- P1714
+- P1886
+- P2947

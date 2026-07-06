@@ -1,0 +1,16 @@
+oj: luogu
+problem: P5739
+title: 【深基7.例7】计算阶乘
+tags: []
+description: '求 $n!$，也就是 $1\times2\times3\dots\times n$。
+
+
+  挑战：尝试不使用循环语句（for、while）完成这个任务。'
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P5739
+common:
+- P1304
+- P5461
+- P5737
+- P5740
+- P5743

@@ -1,0 +1,39 @@
+oj: luogu
+problem: P1885
+title: '[USACO12FEB] Moo B'
+tags:
+- 模拟
+- 字符串
+- 递归
+- 分治
+description: '奶牛 Bessie 最近在学习字符串操作，它用如下的规则逐一的构造出新的字符串：
+
+
+  $S(0) =$ `moo`
+
+
+  $S(1) = S(0) +$ `m` $+$ `ooo` $+ S(0) =$ `moo` $+$ `m` $+$ `ooo` $+$ `moo` $=$ `moomooomoo`
+
+
+  $S(2) = S(1) +$ `m` $+$ `oooo` $+ S(1) =$ `moomooomoo` $+$ `m` $+$ `oooo` $+$  `moomooomoo`
+  $=$ `moomooomoomoooomoomooomoo`
+
+
+  $\dots$
+
+
+  Bessie 就这样产生字符串，直到最后产生的那个字符串长度不小于读入的整数 $N$ 才停止。
+
+
+  通过上面观察，可以发现第 $k$ 个字符串是由：第 $k-1$ 个字符串 $+$ `m` $+$  $(k+2$ 个 $o) +$ 第 $k-1$ 个字符串连接起来的。
+
+
+  现在的问题是：给出一个整数 $N (1 \leq N \leq 10^9)$，问第 $N$ 个字符是字母 `m` 还是 `o`？'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P1885
+common:
+- P1010
+- P1498
+- P1889
+- P1908
+- P3612

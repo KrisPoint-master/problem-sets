@@ -1,0 +1,39 @@
+oj: luogu
+problem: P1886
+title: 【模板】单调队列 / 滑动窗口
+tags: []
+description: '有一个长为 $n$ 的序列 $a$，以及一个大小为 $k$ 的窗口。现在这个窗口从左边开始向右滑动，每次滑动一个单位，求出每次滑动后窗口中的最小值和最大值。
+
+
+  例如，对于序列 $[1,3,-1,-3,5,3,6,7]$ 以及 $k = 3$，有如下过程：
+
+
+  $$\def\arraystretch{1.2}
+
+  \begin{array}{|c|c|c|}\hline
+
+  \textsf{窗口位置} & \textsf{最小值} & \textsf{最大值} \\ \hline
+
+  \verb![1   3  -1] -3   5   3   6   7 ! & -1 & 3 \\ \hline
+
+  \verb! 1  [3  -1  -3]  5   3   6   7 ! & -3 & 3 \\ \hline
+
+  \verb! 1   3 [-1  -3   5]  3   6   7 ! & -3 & 5 \\ \hline
+
+  \verb! 1   3  -1 [-3   5   3]  6   7 ! & -3 & 5 \\ \hline
+
+  \verb! 1   3  -1  -3  [5   3   6]  7 ! & 3 & 6 \\ \hline
+
+  \verb! 1   3  -1  -3   5  [3   6   7]! & 3 & 7 \\ \hline
+
+  \end{array}
+
+  $$'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P1886
+common:
+- P1440
+- P1638
+- P1714
+- P2032
+- P5788

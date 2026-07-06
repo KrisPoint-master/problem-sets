@@ -1,0 +1,16 @@
+oj: luogu
+problem: P1439
+title: 两个排列的最长公共子序列
+tags:
+- DP
+- 二分
+- 树状数组
+description: 给出 $1,2,\ldots,n$ 的两个排列 $P_1$ 和 $P_2$ ，求它们的最长公共子序列。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1439
+common:
+- P1020
+- P1040
+- P1280
+- P1880
+- P2758

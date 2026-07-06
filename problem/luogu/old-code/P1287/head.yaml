@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1287
+title: 盒子与球
+tags:
+- 搜索
+- 枚举
+description: '现有 $r$ 个互不相同的盒子和 $n$ 个互不相同的球，要将这 $n$ 个球放入 $r$ 个盒子中，且不允许有空盒子。请求出有多少种不同的放法。
+
+
+  两种放法不同当且仅当存在一个球使得该球在两种放法中放入了不同的盒子。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1287
+common:
+- P1044
+- P1293
+- P2386
+- P4071
+- P5520

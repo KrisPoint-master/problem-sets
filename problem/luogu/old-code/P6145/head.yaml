@@ -1,0 +1,30 @@
+oj: luogu
+problem: P6145
+title: '[USACO20FEB] Timeline G'
+tags:
+- 图论
+- 拓扑排序
+description: 'Bessie 在过去的 $M$ 天内参加了 $N$ 次挤奶。但她已经忘了她每次挤奶是在哪个时候了。
+
+
+  对于第 $i$ 次挤奶，Bessie 记得它不早于第 $S_i$ 天进行。另外，她还有 $C$ 条记忆，每条记忆形如一个三元组 $(a,b,x)$，含义是第 $b$
+  次挤奶在第 $a$ 次挤奶结束至少 $x$ 天后进行。
+
+
+  现在请你帮 Bessie 算出在满足所有条件的前提下，每次挤奶的最早日期。
+
+
+  保证 Bessie 的记忆没有错误，这意味着一定存在一种合法的方案，使得：
+
+
+  - 第 $i$ 次挤奶不早于第 $S_i$ 天进行，且不晚于第 $M$ 天进行；
+
+  - 所有的记忆都得到满足；'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P6145
+common:
+- P1137
+- P1807
+- P1960
+- P2419
+- P6146

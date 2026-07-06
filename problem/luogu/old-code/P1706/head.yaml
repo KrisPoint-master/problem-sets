@@ -1,0 +1,17 @@
+oj: luogu
+problem: P1706
+title: 全排列问题
+tags:
+- 搜索
+- 数学
+- 递归
+- DFS
+description: 按照字典序输出自然数 $1$ 到 $n$ 所有不重复的排列，即 $n$ 的全排列，要求所产生的任一数字序列中不允许出现重复的数字。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1706
+common:
+- P1036
+- P1088
+- P1157
+- P1219
+- P3392

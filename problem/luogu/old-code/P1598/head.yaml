@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1598
+title: '[USACO03FEB] 垂直柱状图 Vertical Histogram'
+tags:
+- 模拟
+- 字符串
+description: 写一个程序从输入文件中去读取四行大写字母（全都是大写的，每行不超过 $100$ 个字符），然后用柱状图输出每个字符在输入文件中出现的次数。严格地按照输出样例来安排你的输出格式。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1598
+common:
+- P1028
+- P1553
+- P1914
+- P5735
+- P5736

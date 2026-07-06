@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1440
+title: 求m区间内的最小值
+tags:
+- DP
+description: 一个含有 $n$ 项的数列，求出每一项前的 $m$ 个数到它这个区间内的最小值。若前面的数不足 $m$ 项则从第 $1$ 个数开始，若前面没有数则输出
+  $0$。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P1440
+common:
+- P1638
+- P1714
+- P1725
+- P1886
+- P2032

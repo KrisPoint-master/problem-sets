@@ -1,0 +1,16 @@
+oj: luogu
+problem: P1347
+title: '[ECNA 2001] 排序'
+tags:
+- 图论
+- 拓扑排序
+description: 一个不同的值的升序排序数列指的是一个从左到右元素依次增大的序列，例如，一个有序的数列 $A,B,C,D$ 表示 $A<B,B<C,C<D$。在这道题中，我们将给你一系列形如
+  $A<B$ 的关系，并要求你判断是否能够根据这些关系确定这个数列的顺序。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1347
+common:
+- P1127
+- P1137
+- P1363
+- P1983
+- P2886

@@ -1,0 +1,9 @@
+oj: luogu
+problem: P16341
+title: '[科大国创杯初中组 2026] 乘积'
+tags:
+- 枚举
+description: 小可可有一个正整数序列，他想知道能否在这个序列中找出连续一段数字的乘积等于一个正整数 $x$。
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P16341
+common: []

@@ -1,0 +1,15 @@
+oj: luogu
+problem: P8218
+title: 【深进1.例1】求区间和
+tags:
+- 前缀和
+description: 给定由 $n$ 个正整数组成的序列 $a_1, a_2, \cdots, a_n$ 和 $m$ 个区间 $[l_i,r_i]$，分别求这
+  $m$ 个区间的区间和。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P8218
+common:
+- P1719
+- P2004
+- P2367
+- P3397
+- B3612

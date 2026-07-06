@@ -1,0 +1,16 @@
+oj: luogu
+problem: P1781
+title: 宇宙总统
+tags:
+- 字符串
+- 高精度
+- 排序
+description: 地球历公元 6036 年，全宇宙准备竞选一个最贤能的人当总统，共有 $n$ 个非凡拔尖的人竞选总统，现在票数已经统计完毕，请你算出谁能够当上总统。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1781
+common:
+- P1012
+- P1068
+- P1093
+- P1104
+- P2676

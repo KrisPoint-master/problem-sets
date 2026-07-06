@@ -1,0 +1,15 @@
+oj: luogu
+problem: P11951
+title: '[科大国创杯初中组 2023] 数数'
+tags:
+- 二分
+description: '小可可和小多在拼木棍。
+
+
+  他们现在拿到了 $n$ 根木棍，第 $i$ 根木棍的长度是 $a_i$。他们现在想知道，有多少种在里面选三根木棍的方案，使得这三根木棍能组成一个三角形？
+
+
+  三根木棍能组成一个三角形，当且仅当较短的两根木棍长度和大于最长的那根木棍长度。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P11951
+common: []

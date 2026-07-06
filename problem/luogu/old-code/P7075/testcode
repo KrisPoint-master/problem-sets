@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int cnt = 0;
+    for (int year = 1; year <= 6295; year++)
+    {
+        if (year % 4 == 0)
+        {
+            if (year % 100 == 0)
+            {
+                if (year % 400 == 0)
+                    cnt++;
+            }
+            else
+                cnt++;
+        }
+    }
+    printf("%d", cnt);
+    return 0;
+}

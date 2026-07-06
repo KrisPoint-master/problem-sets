@@ -1,0 +1,21 @@
+oj: luogu
+problem: P5788
+title: 【模板】单调栈
+tags:
+- 栈
+description: '给出项数为 $n$ 的整数数列 $a_{1 \dots n}$。
+
+
+  定义函数 $f(i)$ 代表数列中第 $i$ 个元素之后第一个大于 $a_i$ 的元素的**下标**，即 $f(i)=\min_{i<j\leq n, a_j
+  > a_i} \{j\}$。若不存在，则 $f(i)=0$。
+
+
+  试求出 $f(1\dots n)$。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P5788
+common:
+- P1440
+- P1886
+- P1901
+- P2866
+- P2947

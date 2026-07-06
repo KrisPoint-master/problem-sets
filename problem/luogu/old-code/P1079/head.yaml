@@ -1,0 +1,28 @@
+oj: luogu
+problem: P1079
+title: '[NOIP 2012 提高组] Vigenère 密码'
+tags:
+- 模拟
+- 字符串
+description: "16 世纪法国外交家 Blaise de Vigenère 设计了一种多表密码加密算法 Vigenère 密码。Vigenère 密码的加密解密算法简单易用，且破译难度比较高，曾在美国南北战争中为南军所广泛使用。\n\
+  \n \n在密码学中，我们称需要加密的信息为明文，用 $M$ 表示；称加密后的信息为密文，用 $C$ 表示；而密钥是一种参数，是将明文转换为密文或将密文转换为明文的算法中输入的数据，记为\
+  \ $k$。在 Vigenère 密码中，密钥 $k$ 是一个字母串，$k=k_1,k_2,…,k_n$。当明文 $M=m_1,m_2,…,m_n$ 时，得到的密文\
+  \ $C=c_1,c_2,…,c_n$，其中 $c_i$=$m_i \\operatorname{\\circledR} k_i$，运算 $\\circledR$\
+  \ 的规则如下表所示：\n\n![](https://cdn.luogu.com.cn/upload/image_hosting/ptr4yu7h.png)\n\
+  \nVigenère 加密在操作时需要注意：\n\n1. $\\circledR$ 运算忽略参与运算的字母的大小写，并保持字母在明文 $M$ 中的大小写形式；\n\
+  2. 当明文 $M$ 的长度大于密钥 $k$ 的长度时，将密钥 $k$ 重复使用。\n\n例如，明文 $M=\\texttt{Helloworld}$，密钥 $k=\\\
+  texttt{abc}$ 时，密文 $C=\\texttt{Hfnlpyosnd}$。\n\n$$\n\\def\\arraystretch{1.5}\n\\\
+  begin{array}{|c|c|c|c|c|c|c|c|c|c|c|} \\hline\n\\textsf{明文} & \\tt H & \\tt e &\
+  \ \\tt l & \\tt l & \\tt o & \\tt w & \\tt o & \\tt r & \\tt l & \\tt d \\\\  \\\
+  hline\n\\textsf{密钥} & \\tt a & \\tt b & \\tt c & \\tt a & \\tt b & \\tt c & \\tt\
+  \ a & \\tt b & \\tt c & \\tt a \\\\  \\hline\n\\textsf{密文} & \\tt H & \\tt f & \\\
+  tt n & \\tt l & \\tt p & \\tt y & \\tt o & \\tt s & \\tt n & \\tt d \\\\  \\hline\n\
+  \\end{array}\n$$"
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1079
+common:
+- P1086
+- P1087
+- P1093
+- P1097
+- P1125

@@ -1,0 +1,14 @@
+oj: luogu
+problem: P5736
+title: 【深基7.例2】质数筛
+tags:
+- 素数判断
+description: 输入 $n$ 个不大于 $10^5$ 的正整数。要求全部储存在数组中，去除掉不是质数的数字，依次输出剩余的质数。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P5736
+common:
+- P5461
+- P5737
+- P5738
+- P5739
+- P5740

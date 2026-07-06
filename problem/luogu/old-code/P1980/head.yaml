@@ -1,0 +1,16 @@
+oj: luogu
+problem: P1980
+title: '[NOIP 2013 普及组] 计数问题'
+tags:
+- 模拟
+- 字符串
+description: 试计算在区间 $1$ 到 $n$ 的所有整数中，数字 $x$（$0\le x\le9$）共出现了多少次？例如，在 $1$ 到 $11$ 中，即在
+  $1,2,3,4,5,6,7,8,9,10,11$ 中，数字 $1$ 出现了 $4$ 次。
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P1980
+common:
+- P1035
+- P1046
+- P1307
+- P2669
+- P5722

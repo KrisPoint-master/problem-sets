@@ -1,0 +1,14 @@
+oj: luogu
+problem: P5738
+title: 【深基7.例4】歌唱比赛
+tags: []
+description: $n(n\le 100)$ 名同学参加歌唱比赛，并接受 $m(m\le 20)$ 名评委的评分，评分范围是 $0$ 到 $10$ 分。这名同学的得分就是这些评委给分中去掉一个最高分，去掉一个最低分，剩下
+  $m-2$ 个评分的平均数。请问得分最高的同学分数是多少？评分保留 $2$ 位小数。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P5738
+common:
+- P5461
+- P5739
+- P5740
+- P5741
+- P5742

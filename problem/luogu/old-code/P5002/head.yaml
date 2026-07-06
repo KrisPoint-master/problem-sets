@@ -1,0 +1,16 @@
+oj: luogu
+problem: P5002
+title: 专心OI - 找祖先
+tags:
+- 搜索
+- 枚举
+description: 这个游戏会给出你一棵树，这棵树有 $N$ 个节点，根结点是 $R$，系统会选中 $M$ 个点 $P_1,P_2 \cdots P_M$，要Imakf
+  回答有多少组点对 $(u_i,v_i)$ 的最近公共祖先是 $P_i$。Imakf 是个小蒟蒻，他就算学了 LCA 也做不出，于是只好求助您了。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P5002
+common:
+- P1351
+- P3128
+- P3398
+- P5003
+- P4281

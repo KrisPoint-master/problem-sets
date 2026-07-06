@@ -1,0 +1,16 @@
+oj: luogu
+problem: P2068
+title: 统计和
+tags:
+- 线段树
+- 树状数组
+description: 给定一个长度为 $n(0\leq n\leq 10^5)$，初始值都为 $0$ 的序列，$x(0\leq x\leq 10^5)$ 次的修改某些位置上的数字，每次加上一个数，并在此期间提出
+  $y(0\leq y\leq 10^5)$ 个问题，求每段区间的和。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P2068
+common:
+- P1531
+- P3372
+- P3368
+- P4939
+- P5057

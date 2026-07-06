@@ -1,0 +1,28 @@
+oj: luogu
+problem: P1832
+title: A+B Problem（再升级）
+tags:
+- DP
+- 数学
+- 递推
+- 背包 DP
+- 素数判断
+description: '- $1+1=?$ 显然是 $2$。
+
+  - $a+b=?$ P1001 回看不谢。
+
+  - 哥德巴赫猜想 似乎已呈泛滥趋势。
+
+
+  _以上纯属个人吐槽_
+
+
+  给定一个正整数 $n$，求将其分解成若干个素数之和的方案总数。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1832
+common:
+- P1203
+- P1507
+- P1679
+- P1734
+- P1757

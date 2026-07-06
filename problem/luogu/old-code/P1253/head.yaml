@@ -1,0 +1,22 @@
+oj: luogu
+problem: P1253
+title: 扶苏的问题
+tags:
+- 线段树
+- O2优化
+description: '给定一个长度为 $n$ 的序列 $a$，要求支持如下三个操作：
+
+
+  1. 给定区间 $[l, r]$，将区间内每个数都修改为 $x$。
+
+  2. 给定区间 $[l, r]$，将区间内每个数都加上 $x$。
+
+  3. 给定区间 $[l, r]$，求区间内的最大值。'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1253
+common:
+- P1438
+- P2023
+- P3373
+- P1471
+- P4513

@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1097
+title: '[NOIP 2007 提高组] 统计数字'
+tags:
+- 模拟
+- 排序
+description: 某次科研调查时得到了 $n$ 个自然数，每个数均不超过 $1.5 \times 10^9$。已知不相同的数不超过 $10^4$ 个，现在需要统计这些自然数各自出现的次数，并按照自然数从小到大的顺序输出统计结果。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1097
+common:
+- P1093
+- P1098
+- P1100
+- P1125
+- P1138

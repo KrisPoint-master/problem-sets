@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1433
+title: 吃奶酪
+tags:
+- DP
+- 搜索
+- DFS
+- 剪枝
+- 状压 DP
+description: 房间里放着 $n$ 块奶酪。一只小老鼠要把它们都吃掉，问至少要跑多少距离？老鼠一开始在 $(0,0)$ 点处。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1433
+common:
+- P1074
+- P1118
+- P1434
+- P1879
+- P1896

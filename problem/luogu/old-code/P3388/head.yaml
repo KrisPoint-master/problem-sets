@@ -1,0 +1,14 @@
+oj: luogu
+problem: P3388
+title: 【模板】割点（割顶）
+tags:
+- 图论
+description: 给出一个 $n$ 个点，$m$ 条边的无向图，求图的割点。
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P3388
+common:
+- P2341
+- P3387
+- P2746
+- P2863
+- P3469

@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1419
+title: 寻找段落
+tags:
+- 二分
+description: '给定一个长度为 $n$ 的序列 $a$，定义 $a_i$ 为第 $i$ 个元素的价值。现在需要找出序列中最有价值的“段落”。段落的定义是长度在
+  $[S, T]$ 之间的连续序列。最有价值段落是指平均值最大的段落。
+
+
+  **段落的平均值** 等于 **段落总价值** 除以 **段落长度**。'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P1419
+common:
+- P1884
+- P1950
+- P2882
+- P3124
+- P4086

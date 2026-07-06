@@ -1,0 +1,19 @@
+oj: luogu
+problem: P3131
+title: '[USACO16JAN] Subsequences Summing to Sevens S'
+tags:
+- 前缀和
+description: 'Farmer John 的 $N$ 头奶牛站成一排，这是它们时不时会做的事情。每头奶牛都有一个独特的整数 ID 编号，以便 Farmer
+  John 能够区分它们。Farmer John 希望为一组连续的奶牛拍照，但由于童年时与数字 $1 \ldots 6$ 相关的创伤事件，他只希望拍摄一组奶牛，如果它们的
+  ID 加起来是 $7$ 的倍数。
+
+
+  请帮助 Farmer John 确定他可以拍摄的最大奶牛组的大小。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P3131
+common:
+- P1387
+- P1719
+- P2367
+- P2280
+- P3397

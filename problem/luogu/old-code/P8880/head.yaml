@@ -1,0 +1,11 @@
+oj: luogu
+problem: P8880
+title: 无知时诋毁原神
+tags:
+- Special Judge
+- O2优化
+description: 纳西妲有一个 $0\sim n-1$ 的排列 $c$。她希望你构造两个同样为 $0\sim n-1$ 的排列的 $a,b$，满足 $\forall
+  i\in[1,n],c_i=(a_i+b_i)\bmod n$。如果纳西妲的要求无法被满足，请输出 $-1$。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P8880
+common: []

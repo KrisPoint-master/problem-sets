@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1339
+title: '[USACO09OCT] Heat Wave G'
+tags:
+- 图论
+- 最短路
+description: 有一个 $n$ 个点 $m$ 条边的无向图，请求出从 $s$ 到 $t$ 的最短路长度。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P1339
+common:
+- P1144
+- P1346
+- P1576
+- P1629
+- P3371

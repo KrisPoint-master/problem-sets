@@ -1,0 +1,48 @@
+oj: luogu
+problem: P4994
+title: 终于结束的起点
+tags:
+- 递推
+- 枚举
+- Fibonacci 数列
+description: '广为人知的斐波拉契数列 $\mathrm{fib}(n)$ 是这么计算的
+
+
+  $$
+
+  \mathrm{fib}(n)=\begin{cases}
+
+  0,& n=0 \\
+
+  1,& n=1 \\
+
+  \mathrm{fib}(n-1) + \mathrm{fib}(n-2),& n>1
+
+  \end{cases}
+
+  $$
+
+
+  也就是 $0, 1, 1, 2, 3, 5, 8, 13 \cdots$，每一项都是前两项之和。
+
+
+  小 F 发现，如果把斐波拉契数列的每一项对任意大于 $1$ 的正整数 $M$ 取模的时候，数列都会产生循环。
+
+
+  当然，小 F 很快就明白了，因为 ($\mathrm{fib}(n - 1) \bmod M$) 和 ($\mathrm{fib}(n - 2) \bmod M)$
+  最多只有 $M ^ 2$ 种取值，所以在 $M  ^ 2$ 次计算后一定出现过循环。
+
+
+  甚至更一般地，我们可以证明，无论取什么模数 $M$，最终模 $M$ 下的斐波拉契数列都会是 $0, 1, \cdots, 0, 1, \cdots$。
+
+
+  现在，给你一个模数 $M$，请你求出最小的 $n > 0$，使得 $\mathrm{fib}(n) \bmod M = 0, \mathrm{fib}(n +
+  1) \bmod M = 1$。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P4994
+common:
+- P1003
+- P1067
+- P5002
+- P4995
+- P4996

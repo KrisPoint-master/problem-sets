@@ -1,0 +1,19 @@
+oj: luogu
+problem: P1255
+title: 数楼梯
+tags:
+- 高精度
+- 递推
+- Fibonacci 数列
+description: '楼梯有 $N$ 阶，上楼可以一步上一阶，也可以一步上二阶。
+
+
+  编一个程序，计算共有多少种不同的走法。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1255
+common:
+- P1002
+- P1028
+- P1044
+- P1604
+- P2437

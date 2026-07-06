@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1596
+title: '[USACO10OCT] Lake Counting S'
+tags:
+- 搜索
+- 图论
+- BFS
+- DFS
+description: 由于最近的降雨，水在农夫约翰的田地里积聚了。田地可以表示为一个 $N \times M$ 的矩形（$1 \leq N \leq 100$；$1
+  \leq M \leq 100$）。每个方格中要么是水（`W`），要么是干地（`.`）。农夫约翰想要弄清楚他的田地里形成了多少个水塘。一个水塘是由连通的水方格组成的，其中一个方格被认为与它的八个邻居相邻。给定农夫约翰田地的示意图，确定他有多少个水塘。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1596
+common:
+- P1135
+- P1162
+- P1219
+- P1443
+- P1451

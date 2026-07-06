@@ -1,0 +1,21 @@
+oj: luogu
+problem: P1049
+title: '[NOIP 2001 普及组] 装箱问题'
+tags:
+- DP
+- 递归
+- DFS
+- 背包 DP
+description: '有一个箱子容量为 $V$，同时有 $n$ 个物品，每个物品有一个体积。
+
+
+
+  现在从 $n$ 个物品中，任取若干个装入箱内（也可以不取），使箱子的剩余空间最小。输出这个最小值。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1049
+common:
+- P1048
+- P1060
+- P1091
+- P1164
+- P1616

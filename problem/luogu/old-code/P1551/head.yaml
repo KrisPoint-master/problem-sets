@@ -1,0 +1,18 @@
+oj: luogu
+problem: P1551
+title: 亲戚
+tags: []
+description: '若某个家族人员过于庞大，要判断两个是否是亲戚，确实还很不容易，现在给出某个亲戚关系图，求任意给出的两个人是否具有亲戚关系。
+
+
+
+  规定：$x$ 和 $y$ 是亲戚，$y$ 和 $z$ 是亲戚，那么 $x$ 和 $z$ 也是亲戚。如果 $x$，$y$ 是亲戚，那么 $x$ 的亲戚都是 $y$
+  的亲戚，$y$ 的亲戚也都是 $x$ 的亲戚。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P1551
+common:
+- P1111
+- P1536
+- P2078
+- P3366
+- P3367

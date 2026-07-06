@@ -1,0 +1,15 @@
+oj: luogu
+problem: P2126
+title: Mzc家中的男家丁
+tags:
+- 图论
+- 贪心
+description: mzc 家很有钱（开玩笑），他家有 $n$ 个男家丁，现在 mzc 要将他们全都聚集起来（干什么就不知道了）。现在知道 mzc 与男家丁们互相之间通信的时间，请算出把他们每个人叫到需要的总时间（要重复的哦）。保证能把他们每个人叫到。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P2126
+common:
+- P1195
+- P2009
+- P2121
+- P2299
+- P2820

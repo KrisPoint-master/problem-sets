@@ -1,0 +1,17 @@
+oj: luogu
+problem: P2657
+title: '[SCOI2009] windy 数'
+tags:
+- DP
+- 搜索
+- 记忆化搜索
+description: 不含前导零且相邻两个数字之差至少为 $2$ 的正整数被称为 windy 数。windy 想知道，在 $a$ 和 $b$ 之间，包括 $a$
+  和 $b$，总共有多少个 windy 数？
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P2657
+common:
+- P2602
+- P3413
+- P4127
+- P4124
+- P4317

@@ -1,0 +1,14 @@
+oj: luogu
+problem: P10450
+title: '[USACO03MAR] Best Cow Fences G'
+tags:
+- DP
+- 二分
+- 前缀和
+description: '**原题来自：USACO 2003 Mar. Green**
+
+
+  给定一个长度为 $n$ 的非负整数序列 $A$ ，求一个平均数最大的，长度不小于 $L$ 的子段。'
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P10450
+common: []

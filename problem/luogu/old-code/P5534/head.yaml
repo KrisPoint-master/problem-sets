@@ -1,0 +1,19 @@
+oj: luogu
+problem: P5534
+title: 【XR-3】等差数列
+tags:
+- 模拟
+- 数学
+- O2优化
+description: '小 X 给了你一个等差数列的前两项以及项数，请你求出这个等差数列各项之和。
+
+
+  等差数列：对于一个 $n$ 项数列 $a$，如果满足对于任意 $i \in [1,n)$，有 $a_{i+1} - a_i = d$，其中 $d$ 为定值，则称这个数列为一个等差数列。'
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P5534
+common:
+- P1192
+- P5594
+- P5601
+- P5660
+- P5681

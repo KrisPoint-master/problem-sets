@@ -1,0 +1,13 @@
+oj: luogu
+problem: P5737
+title: 【深基7.例3】闰年展示
+tags: []
+description: 输入 $x,y$，输出 $[x,y]$ 区间中闰年个数，并在下一行输出所有闰年年份数字，使用空格隔开。
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P5737
+common:
+- P1304
+- P5735
+- P5738
+- P5739
+- P5743

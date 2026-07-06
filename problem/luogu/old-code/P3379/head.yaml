@@ -1,0 +1,14 @@
+oj: luogu
+problem: P3379
+title: 【模板】最近公共祖先（LCA）
+tags:
+- O2优化
+description: 如题，给定一棵有根多叉树，请求出指定两个点直接最近的公共祖先。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P3379
+common:
+- P1967
+- P2420
+- P3372
+- P3865
+- P5836

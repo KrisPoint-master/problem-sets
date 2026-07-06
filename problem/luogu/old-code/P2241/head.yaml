@@ -1,0 +1,16 @@
+oj: luogu
+problem: P2241
+title: 统计方形（数据加强版）
+tags:
+- 数学
+- 计算几何
+- 枚举
+description: 有一个 $n \times m$ 方格的棋盘，求其方格包含多少正方形、长方形（不包含正方形）。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P2241
+common:
+- P1036
+- P1157
+- P1618
+- P1706
+- P2089

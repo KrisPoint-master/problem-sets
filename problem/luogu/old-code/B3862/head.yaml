@@ -1,0 +1,12 @@
+oj: luogu
+problem: B3862
+title: 图的遍历（简单版）
+tags:
+- 搜索
+- 图论
+- BFS
+- DFS
+description: 给出 $N$ 个点，$M$ 条边的有向图，对于每个点 $v$，求 $A(v)$ 表示从点 $v$ 出发，能到达的编号最大的点。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/B3862
+common: []

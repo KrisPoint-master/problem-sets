@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1075
+title: '[NOIP 2012 普及组] 质因数分解'
+tags:
+- 数学
+- 素数判断
+description: 已知正整数 $n$ 是两个不同的质数的乘积，试求出两者中较大的那个质数。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1075
+common:
+- P1085
+- P1089
+- P1116
+- P4956
+- P5725

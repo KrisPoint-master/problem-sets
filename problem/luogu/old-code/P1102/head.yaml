@@ -1,0 +1,17 @@
+oj: luogu
+problem: P1102
+title: A-B 数对
+tags:
+- 模拟
+- 数学
+- 二分
+- 排序
+description: 给出一串正整数数列以及一个正整数 $C$，要求计算出所有满足 $A - B = C$ 的数对的个数（不同位置的数字一样的数对算不同的数对）。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1102
+common:
+- P1024
+- P1678
+- P1873
+- P2440
+- P2678

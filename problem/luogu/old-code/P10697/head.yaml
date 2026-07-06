@@ -1,0 +1,19 @@
+oj: luogu
+problem: P10697
+title: '[SNCPC2024] 消失的数字'
+tags:
+- O2优化
+- 进制
+description: 'uuku 正在学习数位 DP！
+
+
+  但某一天，他发现 $1,2,\ldots,9$ 这九个数字中的 $x$ 消失了，也就是说所有包含 $x$ 这个数字的数都消失了。
+
+
+  这让他非常惊慌，因为这对统计数的个数有很大的影响。
+
+
+  现在，他希望你能帮助他求出这种情况下数 $n$ 在未消失的自然数中从小到大排在第几位。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P10697
+common: []

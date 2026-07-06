@@ -1,0 +1,19 @@
+oj: luogu
+problem: P5690
+title: '[CSP-S 2019 江西] 日期'
+tags:
+- 贪心
+- 枚举
+description: 'Alice 在纸上写下了一个日期，形式为 $\text{MM-DD}$，其中 $\text{MM}$ 与 $\text{DD}$ 都是两位数字，分别表示月和天，然而这个日期并不一定存在。
+  Alice 找来了 Bob 要他更改若干位上的数字，使得这个日期存在。请你帮 Bob 算算他最少需要更改几位数字。
+
+
+  本题中我们认为 $2$ 月固定为 $28$ 天。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P5690
+common:
+- P5657
+- P5660
+- P5703
+- P5686
+- P5681

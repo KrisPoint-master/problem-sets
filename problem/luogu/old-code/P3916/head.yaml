@@ -1,0 +1,18 @@
+oj: luogu
+problem: P3916
+title: 图的遍历
+tags:
+- 搜索
+- 图论
+- BFS
+- DFS
+description: 给出 $N$ 个点，$M$ 条边的有向图，对于每个点 $v$，令 $A(v)$ 表示从点 $v$ 出发，能到达的编号最大的点。现在请求出
+  $A(1),A(2),\dots,A(N)$ 的值。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/P3916
+common:
+- P1113
+- P3371
+- P2853
+- P4017
+- P5318

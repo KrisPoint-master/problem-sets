@@ -1,0 +1,11 @@
+oj: luogu
+problem: B4016
+title: 树的直径
+tags:
+- O2优化
+- DFS
+- 树形 DP
+description: 给定一棵 $n$ 个结点的树，树没有边权。请求出树的直径是多少，即树上最长的不重复经过一个点的路径长度是多少。
+difficulty: 普及/提高-
+source: https://www.luogu.com.cn/problem/B4016
+common: []

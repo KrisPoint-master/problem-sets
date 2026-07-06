@@ -1,0 +1,15 @@
+oj: luogu
+problem: P1734
+title: 最大约数和
+tags:
+- DP
+- 背包 DP
+description: 选取和不超过 $S$ 的若干个不同的正整数，使得所有数的约数（不含它本身）之和最大。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1734
+common:
+- P1060
+- P1507
+- P1510
+- P1616
+- P1926

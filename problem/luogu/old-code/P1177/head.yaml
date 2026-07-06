@@ -1,0 +1,14 @@
+oj: luogu
+problem: P1177
+title: 【模板】排序
+tags:
+- 排序
+description: 将读入的 $N$ 个数从小到大排序后输出。
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1177
+common:
+- P1059
+- P1068
+- P1093
+- P1781
+- P1923

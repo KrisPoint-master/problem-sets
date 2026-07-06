@@ -1,0 +1,16 @@
+oj: luogu
+problem: P2312
+title: '[NOIP 2014 提高组] 解方程'
+tags:
+- 数学
+- 枚举
+description: "已知多项式方程：\n\n$$a_0+a_1x+a_2x^2+\\cdots+a_nx^n=0$$ \n\n求这个方程在 $[1,m]$\
+  \ 内的整数解（$n$ 和 $m$ 均为正整数）。"
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P2312
+common:
+- P1941
+- P1966
+- P2296
+- P2679
+- P2680

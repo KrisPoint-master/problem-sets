@@ -1,0 +1,14 @@
+oj: luogu
+problem: P5681
+title: '[CSP-J 2019 江西] 面积'
+tags:
+- 数学
+description: Alice 有一个边长为 $a$ 的正方形，Bob 有一个长宽分别为 $b,c$ 的矩形，请你告诉他们俩谁的图形面积更大。
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P5681
+common:
+- P3954
+- P5660
+- P5690
+- P7071
+- P7909

@@ -1,0 +1,16 @@
+oj: luogu
+problem: P16343
+title: '[科大国创杯初中组 2026] 行走'
+tags:
+- DP
+- gcd
+description: '小可可有一个 $n \times n$ 的方格，方格 $(i, j)$ 上有一个正整数 $a_{i,j}$。小可可希望从 $(1, 1)$
+  走到 $(n, n)$，他只能往下或往右走，即从 $(i, j)$ 走到 $(i+1, j)$ 或从 $(i, j)$ 走到 $(i, j+1)$。他身上有一个正整数
+  $v$，初始为 $a_{1,1}$，小可可每走到一个格子 $(i, j)$，$v$ 会变为 $\gcd(v, a_{i,j})$。小可可想知道他走到 $(n,
+  n)$ 时 $v$ 最大为多少。
+
+
+  > $\gcd(i, j)$ 表示正整数 $i$ 和 $j$ 的最大公约数，即为最大的正整数 $d$ 满足 $d$ 整除 $i$ 并且 $d$ 整除 $j$。'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P16343
+common: []

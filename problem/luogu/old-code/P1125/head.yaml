@@ -1,0 +1,20 @@
+oj: luogu
+problem: P1125
+title: '[NOIP 2008 提高组] 笨小猴'
+tags:
+- 模拟
+- 字符串
+- 素数判断
+description: '笨小猴的词汇量很小，所以每次做英语选择题的时候都很头疼。但是他找到了一种方法，经试验证明，用这种方法去选择选项的时候选对的几率非常大！
+
+
+  这种方法的具体描述如下：假设 $\text{maxn}$ 是单词中出现次数最多的字母的出现次数，$\text{minn}$ 是单词中出现次数最少的字母的出现次数，如果
+  $\text{maxn}-\text{minn}$ 是一个质数，那么笨小猴就认为这是个 Lucky Word，这样的单词很可能就是正确的答案。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P1125
+common:
+- P1308
+- P1957
+- P5015
+- P5734
+- P5736

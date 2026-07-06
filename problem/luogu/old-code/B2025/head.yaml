@@ -1,0 +1,13 @@
+oj: luogu
+problem: B2025
+title: 输出字符菱形
+tags: []
+description: 用 `*` 构造一个对角线长 $5$ 个字符，倾斜放置的菱形。
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/B2025
+common:
+- P1001
+- P1000
+- B2005
+- B2026
+- B2029

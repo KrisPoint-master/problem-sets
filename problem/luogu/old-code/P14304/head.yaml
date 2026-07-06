@@ -1,0 +1,19 @@
+oj: luogu
+problem: P14304
+title: 【MX-J27-T1】分块
+tags:
+- 数学
+- O2优化
+description: '小 L 喜欢分块，于是小 L 给了你一个正整数 $n$，你需要统计有多少个不超过 $n$ 的正整数 $x$ 满足 $\lfloor \sqrt{x}
+  \rfloor$ 是 $x$ 的因数。
+
+
+  因为小 L 怕你浑水摸鱼，所以小 L 给了你 $q$ 组不同的询问 $n_1, \ldots, n_q$，每组询问的 $n_i$ 可能不同。你需要对每个 $n
+  = n_i$ 求出正确答案。
+
+
+  题面中的 $\lfloor \rfloor$ 为向下取整符号，$\lfloor a \rfloor$ 表示最大的不超过 $a$ 的整数。例如，$\lfloor
+  1.9\rfloor = 1$，$\lfloor 7 \rfloor = 7$，而 $\lfloor \pi \rfloor =3$。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P14304
+common: []
