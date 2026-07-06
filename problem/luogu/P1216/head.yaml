@@ -1,0 +1,7 @@
+oj: luogu
+problem: P1216
+title: "[IOI 1994] 数字三角形 Number Triangles"
+tags: [DP, DFS, 记忆化搜索]
+description: 数字金字塔从顶到底的路径最大和。
+difficulty: ""
+source: https://www.luogu.com.cn/problem/P1216

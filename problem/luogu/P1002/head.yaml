@@ -1,0 +1,7 @@
+oj: luogu
+problem: P1002
+title: "[NOIP 2002 普及组] 过河卒"
+tags: [DP, DFS, 记忆化搜索]
+description: 棋盘上过河卒从A点到B点的路径计数，马的控制点不可经过。
+difficulty: ""
+source: https://www.luogu.com.cn/problem/P1002

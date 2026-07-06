@@ -1,0 +1,7 @@
+oj: luogu
+problem: P1824
+title: "[USACO05FEB] 进击的奶牛 Aggressive Cows G"
+tags: [二分答案, 贪心]
+description: 最大化最近两头牛的最小距离。
+difficulty: ""
+source: https://www.luogu.com.cn/problem/P1824

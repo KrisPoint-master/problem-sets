@@ -1,0 +1,7 @@
+oj: luogu
+problem: P6625
+title: "[省选联考 2020 B 卷] 卡牌游戏"
+tags: [数学, 贪心, 前缀和]
+description: 合并卡牌获得的最大总分。
+difficulty: ""
+source: https://www.luogu.com.cn/problem/P6625
