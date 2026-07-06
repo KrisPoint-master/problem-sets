@@ -1,7 +1,16 @@
 oj: luogu
 problem: P1057
-title: "[NOIP 2008 普及组] 传球游戏"
-tags: [DP, DFS, 记忆化搜索]
+title: '[NOIP 2008 普及组] 传球游戏'
+tags:
+- DP
+- DFS
+- 记忆化搜索
 description: n个人围成一圈传球，求传m次后回到1号手中的方法数。
-difficulty: ""
+difficulty: ''
 source: https://www.luogu.com.cn/problem/P1057
+common:
+- P1058
+- P1077
+- P1091
+- P1095
+- P1135

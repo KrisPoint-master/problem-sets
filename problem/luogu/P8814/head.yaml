@@ -1,7 +1,16 @@
 oj: luogu
 problem: P8814
-title: "[CSP-J 2022] 解密"
-tags: [数学, 解方程, 数论]
+title: '[CSP-J 2022] 解密'
+tags:
+- 数学
+- 解方程
+- 数论
 description: 解二次方程求p,q。
-difficulty: ""
+difficulty: ''
 source: https://www.luogu.com.cn/problem/P8814
+common:
+- P8818
+- P8813
+- P8815
+- P8816
+- P8817

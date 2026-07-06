@@ -1,0 +1,15 @@
+oj: luogu
+problem: P2985
+title: P2985 [USACO10FEB] Chocolate Eating S
+tags:
+- 贪心
+- 二分
+description: 二分答案， 最大最小值问题
+difficulty: 普及
+source: https://www.luogu.com.cn/problem/P2985
+common:
+- P1083
+- P1948
+- P2115
+- P3017
+- P5815

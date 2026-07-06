@@ -1,7 +1,15 @@
 oj: luogu
 problem: P1970
-title: "[NOIP 2013 提高组] 花匠"
-tags: [DP, 贪心]
+title: '[NOIP 2013 提高组] 花匠'
+tags:
+- DP
+- 贪心
 description: 求最长摆动子序列。
-difficulty: ""
+difficulty: ''
 source: https://www.luogu.com.cn/problem/P1970
+common:
+- P1351
+- P1965
+- P1966
+- P2296
+- P2661

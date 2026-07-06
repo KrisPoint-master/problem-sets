@@ -1,0 +1,15 @@
+oj: luogu
+problem: P2678
+title: '[NOIP 2015 提高组] 跳石头'
+tags:
+- 贪心
+- 二分
+description: 二分答案
+difficulty: 普及
+source: https://www.luogu.com.cn/problem/P2678
+common:
+- P1182
+- P1873
+- P2440
+- P2679
+- P3853

@@ -1,7 +1,10 @@
 oj: luogu
 problem: P9748
-title: "[CSP-J 2023] 小苹果"
-tags: [数学, 模拟]
+title: '[CSP-J 2023] 小苹果'
+tags:
+- 数学
+- 模拟
 description: 每隔2拿1苹果，求拿完天数和最后苹果被拿的天数。
-difficulty: ""
+difficulty: ''
 source: https://www.luogu.com.cn/problem/P9748
+common: []
