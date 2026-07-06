@@ -45,6 +45,7 @@ def search(problems, cmd):
         "desc:": "description",
         "diff:": "difficulty",
         "oj:": "oj",
+        "common:": "common",
     }
 
     for prefix, field in prefixes.items():
@@ -107,6 +108,7 @@ def show_help():
     desc:<关键词>      按描述搜索
     diff:<关键词>      按难度搜索
     oj:<关键词>        按OJ搜索
+    common:<关键词>    按相似题目搜索 (e.g. common:P1003)
     list / all        列出所有题目
     help              显示此帮助
     exit / quit       退出
