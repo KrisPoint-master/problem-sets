@@ -104,9 +104,29 @@ def cmd_help(tools, args):
     exit                     退出
 """)
 
+def check_incomplete():
+    root = os.path.dirname(SCRIPTS_DIR)
+    problem_dir = os.path.join(root, "problem")
+    incomplete = []
+    if os.path.isdir(problem_dir):
+        for cat in os.listdir(problem_dir):
+            catpath = os.path.join(problem_dir, cat)
+            if not os.path.isdir(catpath):
+                continue
+            for prob in os.listdir(catpath):
+                if os.path.isfile(os.path.join(catpath, prob, "not_complete")):
+                    incomplete.append(f"{cat}/{prob}")
+    return incomplete
+
 def main():
     tools = discover_tools()
+    incomplete = check_incomplete()
     print(f"Manager — 共发现 {len(tools)} 个工具，输入 help 查看帮助，exit 退出。\n")
+    if incomplete:
+        print(f"  ⚠ 以下 {len(incomplete)} 个题目标记为未完成:\n")
+        for item in incomplete:
+            print(f"    - {item}")
+        print()
     while True:
         try:
             line = input("manager> ").strip()

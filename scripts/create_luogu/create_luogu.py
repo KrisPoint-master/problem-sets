@@ -1,49 +1,127 @@
 import os
 import re
 import sys
+import time
 import argparse
 import json
 import yaml
 import requests
-from bs4 import BeautifulSoup
 
 PROBLEM_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "problem", "luogu")
 LUOGU_URL = "https://www.luogu.com.cn/problem/{problem_id}"
+TAG_API_URL = "https://www.luogu.com.cn/_lfe/tags/zh-CN"
+
+DIFFICULTY_MAP = {
+    0: "暂无评定", 1: "入门", 2: "普及-", 3: "普及/提高-",
+    4: "普及+/提高", 5: "提高+/省选-", 6: "省选/NOI-",
+    7: "NOI", 8: "NOI+/CTSC",
+}
+
+_SESSION = None
+_CACHED_PAGE = {}
 
 
-def fetch_page_data(problem_id):
-    url = LUOGU_URL.format(problem_id=problem_id)
-    r = requests.get(url, timeout=10, headers={
-        "User-Agent": "Mozilla/5.0 (compatible; create.py)"
-    })
-    r.raise_for_status()
-    m = re.search(r'<script id="lentille-context" type="application/json">(.*?)</script>', r.text, re.DOTALL)
-    if not m:
-        return None
-    return json.loads(m.group(1))
+def _get_session():
+    global _SESSION
+    if _SESSION is None:
+        _SESSION = requests.Session()
+        _SESSION.headers.update({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        })
+    return _SESSION
 
 
-def fetch_title(problem_id):
+def _request_with_retry(url, retries=3, timeout=15):
+    session = _get_session()
+    last_err = None
+    for attempt in range(retries):
+        try:
+            r = session.get(url, timeout=timeout)
+            r.raise_for_status()
+            return r
+        except requests.RequestException as e:
+            last_err = e
+            if attempt < retries - 1:
+                time.sleep(1 * (attempt + 1))
+    raise last_err
+
+
+def fetch_tag_map():
     try:
-        data = fetch_page_data(problem_id)
-        if data:
-            name = data["data"]["problem"]["name"]
-            if name:
-                return name
+        r = _request_with_retry(TAG_API_URL, timeout=10)
+        data = r.json()
+        return {t["id"]: t for t in data.get("tags", [])}
     except Exception:
-        pass
+        return {}
+
+
+def fetch_page_data(problem_id, retries=3):
+    if problem_id in _CACHED_PAGE:
+        return _CACHED_PAGE[problem_id]
+
+    for attempt in range(retries):
+        try:
+            r = _request_with_retry(LUOGU_URL.format(problem_id=problem_id), retries=1, timeout=15)
+            m = re.search(r'<script id="lentille-context" type="application/json">(.*?)</script>', r.text, re.DOTALL)
+            if m:
+                data = json.loads(m.group(1))
+                _CACHED_PAGE[problem_id] = data
+                return data
+        except Exception:
+            pass
+        if attempt < retries - 1:
+            time.sleep(1.5 * (attempt + 1))
     return None
 
 
+def get_problem_title(problem_id):
+    data = fetch_page_data(problem_id)
+    return data["data"]["problem"].get("name", "") if data else ""
+
+
+def get_problem_tags(problem_id):
+    data = fetch_page_data(problem_id)
+    if not data:
+        return []
+    tag_ids = data["data"]["problem"].get("tags", [])
+    if not tag_ids:
+        return []
+
+    tag_map = fetch_tag_map()
+    if not tag_map:
+        return []
+    return [
+        tag_map[t]["name"]
+        for t in tag_ids
+        if t in tag_map and tag_map[t].get("type") == 2
+    ]
+
+
+def get_problem_difficulty(problem_id):
+    data = fetch_page_data(problem_id)
+    if not data:
+        return ""
+    diff_num = data["data"]["problem"].get("difficulty")
+    if isinstance(diff_num, int):
+        return DIFFICULTY_MAP.get(diff_num, "")
+    return str(diff_num) if diff_num else ""
+
+
+def get_problem_description(problem_id):
+    data = fetch_page_data(problem_id)
+    if not data:
+        return ""
+    problem = data["data"]["problem"]
+    contenu = problem.get("contenu") or problem.get("content", {})
+    return contenu.get("description", "").strip()
+
+
 def fetch_similar_problems(problem_id):
-    try:
-        data = fetch_page_data(problem_id)
-        if data:
-            recommendations = data["data"].get("recommendations", [])
-            return [r["pid"] for r in recommendations if r.get("pid")]
-    except Exception:
-        pass
-    return []
+    data = fetch_page_data(problem_id)
+    if not data:
+        return []
+    recommendations = data["data"].get("recommendations", [])
+    return [r["pid"] for r in recommendations if r.get("pid")]
 
 
 def build_problem_md(data):
@@ -152,34 +230,45 @@ def main():
 
     if os.path.exists(dirpath):
         if args.force:
-            print(f"目录已存在，因 -f 参数直接覆盖")
+            print("目录已存在，因 -f 参数直接覆盖")
         else:
             ans = input(f"目录 {os.path.relpath(dirpath, os.path.join(os.path.dirname(__file__), '..'))} 已存在，覆盖? (y/N): ").strip().lower()
             if ans != "y":
                 print("已取消")
                 return
 
+    auto_title = get_problem_title(problem_id)
+    auto_tags = get_problem_tags(problem_id)
+    auto_desc = get_problem_description(problem_id)
+    auto_diff = get_problem_difficulty(problem_id)
+    auto_common = fetch_similar_problems(problem_id)
+
+    if auto_title:
+        print(f"自动获取标题: {auto_title}")
+    if auto_tags:
+        print(f"自动获取标签: {', '.join(auto_tags)}")
+    if auto_diff:
+        print(f"自动获取难度: {auto_diff}")
+    if auto_common:
+        print(f"自动获取相似题目: {', '.join(auto_common)}")
+    if auto_desc:
+        print(f"自动获取描述: {auto_desc[:60]}{'...' if len(auto_desc) > 60 else ''}")
+
     has_cli_flag = any(getattr(args, f) is not None for f in ["title", "tags", "desc", "difficulty"])
     interactive = not has_cli_flag
 
-    data = {
-        "oj": "luogu",
-        "problem": problem_id,
-    }
+    data = {"oj": "luogu", "problem": problem_id}
 
     if interactive:
-        fetched = fetch_title(problem_id)
-        if fetched:
-            print(f"自动获取标题: {fetched}")
-        title = prompt("title", default=fetched or "")
-        raw_tags = prompt("tags (逗号分隔)")
-        desc = prompt("description")
-        diff = prompt("difficulty")
+        title = prompt("title", default=auto_title or "")
+        raw_tags = prompt("tags (逗号分隔)", default=",".join(auto_tags))
+        desc = prompt("description", default=auto_desc or "")
+        diff = prompt("difficulty", default=auto_diff or "")
     else:
-        title = args.title if args.title is not None else ""
-        raw_tags = args.tags if args.tags is not None else ""
-        desc = args.desc if args.desc is not None else ""
-        diff = args.difficulty if args.difficulty is not None else ""
+        title = args.title if args.title is not None else (auto_title or "")
+        raw_tags = args.tags if args.tags is not None else (",".join(auto_tags) if auto_tags else "")
+        desc = args.desc if args.desc is not None else (auto_desc or "")
+        diff = args.difficulty if args.difficulty is not None else (auto_diff or "")
 
     data["title"] = title
     tags = [t.strip() for t in raw_tags.split(",") if t.strip()] if raw_tags else []
@@ -188,20 +277,14 @@ def main():
     data["difficulty"] = diff
     data["source"] = LUOGU_URL.format(problem_id=problem_id)
 
-    fetched_common = fetch_similar_problems(problem_id)
     if interactive:
-        if fetched_common:
-            print(f"自动获取相似题目: {', '.join(fetched_common)}")
-        elif fetched_common is not None:
-            print("该题目暂无相似推荐")
-        common_raw = prompt("common (逗号分隔)", default=",".join(fetched_common) if fetched_common else "")
+        common_raw = prompt("common (逗号分隔)", default=",".join(auto_common) if auto_common else "")
         common = [c.strip() for c in common_raw.split(",") if c.strip()] if common_raw else []
     else:
         if args.common is not None:
             common_raw = args.common
-        elif fetched_common:
-            common_raw = ",".join(fetched_common)
-            print(f"自动获取相似题目: {common_raw}")
+        elif auto_common:
+            common_raw = ",".join(auto_common)
         else:
             print("错误: 无法自动获取相似题目，请手动输入")
             common_raw = input("common (逗号分隔): ").strip()
