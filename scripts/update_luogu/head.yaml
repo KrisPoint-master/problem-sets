@@ -1,0 +1,9 @@
+name: update_luogu
+language: python
+file: update_luogu.py
+description: 批量抓取更新所有 Luogu 题目的 description/tags/common 等字段及 problem.md
+usage: python3 scripts/update_luogu/update_luogu.py [--dry-run] [problem_id ...]
+dependencies:
+- pyyaml
+- requests
+- beautifulsoup4

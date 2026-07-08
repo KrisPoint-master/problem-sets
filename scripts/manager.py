@@ -100,6 +100,7 @@ def cmd_help(tools, args):
     info <工具名>             查看工具详情
     run <工具名> [参数...]    运行工具
     search <关键词>           搜索工具
+    retry                    重新抓取 problem.md 失败的题目
     help                     显示此帮助
     exit                     退出
 """)
@@ -118,15 +119,57 @@ def check_incomplete():
                     incomplete.append(f"{cat}/{prob}")
     return incomplete
 
+
+def check_not_get_problem():
+    root = os.path.dirname(SCRIPTS_DIR)
+    luogu_dir = os.path.join(root, "problem", "luogu")
+    markers = []
+    if os.path.isdir(luogu_dir):
+        for name in os.listdir(luogu_dir):
+            marker_path = os.path.join(luogu_dir, name, "not_get_problem")
+            if os.path.isfile(marker_path):
+                markers.append(name)
+    return sorted(markers)
+
+def cmd_retry(tools, args):
+    root = os.path.dirname(SCRIPTS_DIR)
+    luogu_dir = os.path.join(root, "problem", "luogu")
+    markers = check_not_get_problem()
+    if not markers:
+        print("  没有发现 not_get_problem 标记。")
+        return
+    print(f"  将重新抓取以下 {len(markers)} 道题的 problem.md: {', '.join(markers)}")
+    ans = input("  确认? (Y/n): ").strip().lower()
+    if ans == "n":
+        print("  已取消")
+        return
+    script_path = os.path.join(SCRIPTS_DIR, "update_luogu", "update_luogu.py")
+    if not os.path.isfile(script_path):
+        print(f"  错误: 未找到 {script_path}")
+        return
+    cmd = [sys.executable, script_path] + markers
+    print(f"  运行: {' '.join(cmd)}\n")
+    try:
+        subprocess.run(cmd, cwd=SCRIPTS_DIR)
+    except KeyboardInterrupt:
+        print("\n  已中断")
+
+
 def main():
     tools = discover_tools()
     incomplete = check_incomplete()
+    not_get = check_not_get_problem()
     print(f"Manager — 共发现 {len(tools)} 个工具，输入 help 查看帮助，exit 退出。\n")
     if incomplete:
         print(f"  ⚠ 以下 {len(incomplete)} 个题目标记为未完成:\n")
         for item in incomplete:
             print(f"    - {item}")
         print()
+    if not_get:
+        print(f"  ⚠ 以下 {len(not_get)} 道题的 problem.md 抓取失败 (标记 not_get_problem):\n")
+        for item in not_get:
+            print(f"    - {item}")
+        print(f"  输入 retry 重新抓取\n")
     while True:
         try:
             line = input("manager> ").strip()
@@ -148,6 +191,8 @@ def main():
             cmd_run(tools, args)
         elif cmd == "search":
             cmd_search(tools, args)
+        elif cmd == "retry":
+            cmd_retry(tools, args)
         elif cmd == "help":
             cmd_help(tools, args)
         else:
