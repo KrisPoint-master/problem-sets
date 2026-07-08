@@ -1,0 +1,15 @@
+oj: luogu
+problem: P3392
+title: 涂条纹
+tags:
+- 模拟
+- 枚举
+description: 50直接dfs
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P3392
+common:
+- P1149
+- P1217
+- P3654
+- P2392
+- P3799
