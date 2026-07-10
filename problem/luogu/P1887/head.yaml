@@ -1,0 +1,17 @@
+oj: luogu
+problem: P1887
+title: 乘积最大3
+tags:
+- 数学
+description: '请你找出 $M$ 个和为 $N$ 的正整数，他们的乘积要尽可能的大。
+
+
+  输出字典序最小的一种方案。'
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P1887
+common:
+- P1876
+- P1888
+- P1897
+- P2006
+- P2043
