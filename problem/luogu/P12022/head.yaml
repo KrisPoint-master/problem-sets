@@ -1,0 +1,22 @@
+oj: luogu
+problem: P12022
+title: '[USACO25OPEN] Hoof Paper Scissors Minus One B'
+tags:
+- 枚举
+description: '在一局蹄子剪刀布游戏中，Bessie 和 Elsie 可以出 $N$ （$1 \leq N \leq 3000$）种不同的蹄子手势，编号为
+  $1\dots N$，每个手势对应一种不同的材料。不同材料之间的相互关系有一个复杂的表格，基于该表格，可能会：
+
+
+  - 一种手势获胜，另一种失败。
+
+  - 两种手势平局。
+
+
+  蹄子剪刀布-1.0 的规则类似，但 Bessie 和 Elsie 可以各自出两个手势，每只蹄子出一个。在观察到她们所出的四个手势后，她们各自选择其中一个手势进行游戏。结果根据正常的蹄子剪刀布的规则决定。
+
+
+  给定 Elsie 计划在每局游戏中出的 $M$（$1 \leq M \leq 3000$）个手势组合，Bessie 想知道有多少种不同的手势组合可以确保战胜 Elsie。一个手势组合定义为一个有序对
+  $(L,R)$，其中 $L$ 为奶牛用左蹄出的手势，$R$ 为奶牛用右蹄出的手势。你能为每局游戏进行计算吗？'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P12022
+common: []
