@@ -52,16 +52,22 @@ void work()
         if (old_check(i) != new_check(i))
         {
             ans++;
-            cout << "now i:" << i << endl;
+            // cout << "now i:" << i << endl;
         }
-        cout << ans << endl;
     }
+
+    cout << ans << endl;
+#ifdef DEBUG
+    // cout << "--------------------------" << endl;
+#endif
 }
 
 int main()
 {
     cin >> T;
     while (T--)
+    {
         work();
+    }
     return 0;
 }
