@@ -1,0 +1,15 @@
+oj: luogu
+problem: P9121
+title: '[USACO23FEB] Hungry Cow B'
+tags:
+- 模拟
+- 贪心
+description: 'Bessie 是一头饥饿的奶牛。每天晚餐时，如果谷仓中有干草，她会吃掉一捆干草。为了防止 Bessie 挨饿，有些天 Farmer John
+  会在早晨（晚餐之前）送来一些干草。具体地说，在第 $d_i$ 天，Farmer John 送来了 $b_i$ 捆干草（$1 \leq d_i \leq 10^{14},
+  1 \leq b_i \leq 10^9$）。
+
+
+  请计算 Bessie 在前 $T$ 天内共吃掉了多少捆干草。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P9121
+common: []
