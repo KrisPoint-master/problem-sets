@@ -1,0 +1,22 @@
+oj: luogu
+problem: P8266
+title: '[USACO22OPEN] Photoshoot B'
+tags:
+- 贪心
+description: '迫切希望在郡县集市上赢得最佳奶牛摄影师的 Farmer John 正在尝试为他的 $N$ 头奶牛拍摄一张完美的照片（$2 \leq N
+  \leq 2\cdot 10^5$，$N$ 为偶数）。
+
+
+  Farmer John 拥有两种品种的奶牛：更赛牛（Guernsey）和荷斯坦牛（Holstein）。为了使他的照片尽可能地艺术，他想把他的奶牛排成一排，使得尽可能多的更赛牛处于队列中的偶数位置（队列中的第一个位置是奇数位置，下一个是偶数位置，以此类推）。由于他与他的奶牛缺乏有效的沟通，他可以达到目的的唯一方法是让他的奶牛的偶数长的「前缀」进行反转（一个前缀指的是对于某个位置
+  $j$，从第一头奶牛到第 $j$ 头奶牛范围内的所有奶牛）。
+
+
+  请计算 Farmer John 达到目的所需要的最小反转次数。'
+difficulty: 普及+/提高
+source: https://www.luogu.com.cn/problem/P8266
+common:
+- P8267
+- P8268
+- P8269
+- P8270
+- P8271
