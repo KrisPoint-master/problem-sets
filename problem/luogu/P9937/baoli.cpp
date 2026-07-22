@@ -19,7 +19,7 @@ int get_h(int a[], int n)
         }
         else
         {
-            break;
+            return cnt;
         }
     }
 
@@ -41,9 +41,21 @@ void dfs(int dep, int start)
         t[b[i]]++;
     }
     int h = get_h(t, n);
+
+    // if (maxh < h)
+    // {
+    //     for (int i = 1; i <= n; i++)
+    //     {
+    //         cout << vis[i] << " ";
+    //     }
+    //     cout << endl;
+    //     cout << "Now Maxh:" << maxh << " h:" << h << endl;
+    // }
+
     maxh = max(maxh, h);
 
-    if (dep > l) return;
+    if (dep > l)
+        return;
 
     for (int i = start; i <= n; i++)
     {
@@ -67,7 +79,7 @@ int main(int argc, char const *argv[])
     }
 
     dfs(1, 1);
-
+    // cout << get_h(a, n) << endl;
     cout << maxh << endl;
 
     return 0;
