@@ -1,0 +1,16 @@
+oj: luogu
+problem: P9943
+title: '[USACO21FEB] Year of the Cow B'
+tags:
+- 模拟
+description: 'Farmer John 的奶牛们得知最近正在庆祝牛年的到来时十分兴奋。牛年总是奶牛们的最爱。
+
+
+  我们知道，中国历法中每一年所对应的生肖遵循 $12$ 年的周期：Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey,
+  Rooster, Dog, Pig, Rat（牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪、鼠），然后回到牛。
+
+
+  奶牛 Bessie 自豪地说她是在许多年前的一个牛年出生的。她的朋友 Elsie 想要知道她与 Bessie 出生相差多少年，并且希望你能够通过查看农场上若干奶牛出生年份之间的关系来帮助她推算。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P9943
+common: []

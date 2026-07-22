@@ -1,0 +1,20 @@
+oj: luogu
+problem: P9956
+title: '[USACO20DEC] Daisy Chains B'
+tags:
+- 模拟
+description: '每天，作为她绕农场行走的一部分，奶牛 Bessie 会经过她最喜爱的草地，其中种有 $N$ 朵花（五颜六色的雏菊），编号为 $1\ldots
+  N$（$1\le N\le 100$），排列成一行。花 $i$ 有 $p_i$ 朵花瓣（$1\le p_i\le 1000$）。
+
+
+  作为一名崭露头角的摄影家，Bessie 决定给这些花拍些照片。具体地说，对于每一对满足 $1\le i\le j\le N$ 的花 $(i,j)$，Bessie
+  会给从花 $i$ 到花 $j$ 之间的所有花（包括 $i$ 和 $j$）拍一张照。
+
+
+  后来 Bessie 查看这些照片时注意到有些照片里存在「平均」的花——一朵恰好有 $P$ 朵花瓣的花，其中 $P$ 等于照片中所有花的花瓣数量的平均值。
+
+
+  Bessie 的照片中有几张存在平均的花？'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P9956
+common: []
