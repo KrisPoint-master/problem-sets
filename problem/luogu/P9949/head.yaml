@@ -1,0 +1,16 @@
+oj: luogu
+problem: P9949
+title: '[USACO20FEB] Triangles B'
+tags:
+- 枚举
+description: 'Farmer John 想要给他的奶牛们建造一个三角形牧场。
+
+
+  有 $N$（$3\le N\le 100$）个栅栏柱子分别位于农场的二维平面上不同的点 $(X_1,Y_1)\ldots(X_N,Y_N)$。他可以选择其中三个点组成三角形牧场，只要三角形有一条边与
+  $x$ 轴平行，且有另一条边与 $y$ 轴平行。
+
+
+  Farmer John 可以围成的牧场的最大面积是多少？保证存在至少一个合法的三角形牧场。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P9949
+common: []

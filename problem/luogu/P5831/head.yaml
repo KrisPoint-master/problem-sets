@@ -1,0 +1,20 @@
+oj: luogu
+problem: P5831
+title: '[USACO19DEC] Cow Gymnastics B'
+tags:
+- 枚举
+description: '为了提高健康水平，奶牛们开始进行体操训练了！Farmer John 选定了他最喜爱的奶牛 Bessie 来执教其他 $N$ 头奶牛，同时评估她们学习不同的体操技术的进度。
+
+
+  $K$ 次训练课的每一次，Bessie 都会根据 $N$ 头奶牛的表现给她们进行排名。之后，她对这些排名的一致性产生了好奇。如果其中一头奶牛在每次训练课中都表现得都比另一头要好，则称一对不同的牛是**一致的**。
+
+
+  请帮助 Bessie 计算一致的奶牛的对数。'
+difficulty: 入门
+source: https://www.luogu.com.cn/problem/P5831
+common:
+- P5832
+- P5833
+- P5886
+- P6159
+- P6056

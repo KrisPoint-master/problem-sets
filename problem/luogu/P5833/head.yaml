@@ -1,0 +1,24 @@
+oj: luogu
+problem: P5833
+title: '[USACO19DEC] Livestock Lineup B'
+tags:
+- 字符串
+- 枚举
+description: '每天，Farmer John 都要给他的 $8$ 头奶牛挤奶。她们的名字分别是 Bessie，Buttercup，Belinda，Beatrice，Bella，Blue，Betsy，和
+  Sue。
+
+
+  不幸的是，这些奶牛相当难以伺候，她们要求 Farmer John 以一种符合 $N$ 条限制的顺序给她们挤奶。每条限制的形式为 “$X\ \texttt{must
+  be milked beside}\ Y$”（$X$ 必须紧邻着 $Y$ 挤奶），要求奶牛 $X$ 在挤奶顺序中必须紧接在奶牛 $Y$ 之后，或者紧接在奶牛 $Y$
+  之前。
+
+
+  请帮助 Farmer John 求出一种满足所有限制的奶牛挤奶顺序。保证这样的顺序是存在的。如果有多种顺序都满足要求，请输出字典序最小的一种。也就是说，第一头奶牛需要是所有可能排在任意合法奶牛顺序的第一位的奶牛中名字字典序最小的。在所有合法的以这头字典序最小的奶牛为首的奶牛顺序中，第二头奶牛需要是字典序最小的，以此类推。'
+difficulty: 普及-
+source: https://www.luogu.com.cn/problem/P5833
+common:
+- P1036
+- P1101
+- P5832
+- P5834
+- P5836
